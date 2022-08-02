@@ -1,5 +1,7 @@
 # FakePlayer
 
+## THIS IS FOR MULTIVERSION VERSION OF POCKETMINE FROM NETHERGAMES FOR TESTING ONLY
+
 ## What does this plugin do?
 Similar to [Specter](https://github.com/falkirks/Specter), this plugin spawns players to debug stuff on your server. However, this plugin strictly supports API version 4.0.0.
 
