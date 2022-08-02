@@ -164,7 +164,7 @@ final class Loader extends PluginBase implements Listener{
 		$packet = ResourcePackClientResponsePacket::create(ResourcePackClientResponsePacket::STATUS_COMPLETED, []);
 		$serializer = PacketSerializer::encoder(new PacketSerializerContext(GlobalItemTypeDictionary::getInstance()->getDictionary()));
 		$packet->encode($serializer);
-		$session->handleDataPacket($packet, $serializer->getBuffer());
+		$session->handleDataPacket($packet, 527, $serializer->getBuffer());
 
 		$internal_resolver->getPromise()->onCompletion(function(Player $player) use($info, $session) : void{
 			$player->setViewDistance(4);

@@ -41,7 +41,7 @@ final class DefaultFakePlayerListener implements FakePlayerListener{
 						$packet = SetLocalPlayerAsInitializedPacket::create($entity_runtime_id);
 						$serializer = PacketSerializer::encoder(new PacketSerializerContext(GlobalItemTypeDictionary::getInstance()->getDictionary()));
 						$packet->encode($serializer);
-						$session->handleDataPacket($packet, $serializer->getBuffer());
+						$session->handleDataPacket($packet, 527, $serializer->getBuffer());
 					}
 				}), 40);
 			}
