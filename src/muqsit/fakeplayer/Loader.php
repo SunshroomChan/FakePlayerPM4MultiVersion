@@ -145,7 +145,7 @@ final class Loader extends PluginBase implements Listener{
 			$network->getSessionManager(),
 			PacketPool::getInstance(),
 			new FakePacketSender(),
-			new StandardPacketBroadcaster($server),
+			new StandardPacketBroadcaster($server, 526),
 			ZlibCompressor::getInstance(),
 			$server->getIp(),
 			$server->getPort(),
